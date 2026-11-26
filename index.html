@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Shop football jerseys from Simba SC, Yanga and clubs around the world. Order on WhatsApp for delivery in Dar es Salaam.">
+  <title>JR Kits | Kit Paradise · Football jerseys in Dar es Salaam</title>
+  <link rel="icon" href="./kit-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./store.css">
+  <link rel="stylesheet" href="./wardrobe.css">
+  <script src="./launch.js" defer></script>
+</head>
+<body id="top">
+  <a href="#latest" class="skip" id="skip">Skip to kits</a>
+  <header class="header">
+    <div class="wrap header-row">
+      <a class="brand" href="./index.html" aria-label="JR Kits home"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span><span><strong>JR KITS</strong><small>KIT PARADISE</small></span></a>
+      <nav aria-label="Main navigation"><a href="./index.html#catalogue" id="shop">Shop kits</a><a href="./index.html#catalogue" id="dar">Dar clubs</a><a href="./index.html?view=wardrobe" id="wardrobe-link">Wardrobe</a><button type="button" data-price>Price guide</button></nav>
+      <div class="header-actions">
+        <button class="icon search-button" id="focus-search" aria-label="Search the catalogue"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="m15 15 6 6"/></svg></button>
+        <button class="button dark" id="open-bag"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3.5 6 3-4h11l3 4v14a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2zM4 6h16M8 10a4 4 0 0 0 8 0"/></svg> Bag <span id="bag-count">0</span></button>
+      </div>
+    </div>
+  </header>
+  <main class="wrap" id="shop-view">
+    <section class="hero" aria-label="Featured collections">
+      <div id="hero-panel" class="hero-panel" data-theme="barca">
+        <div class="hero-copy">
+          <span id="hero-tag" class="eyebrow">Latest drops</span>
+          <h1 id="hero-title">The Barça Drop</h1>
+          <p id="hero-text">Explore the latest Barcelona jerseys and standout editions, with front and back photos.</p>
+          <a class="button gold" id="hero-shop" href="#latest">Shop Barcelona</a>
+        </div>
+        <img id="hero-image" src="./assets/barcelona/barcelona-home-2026-27-front.webp" alt="Barcelona Home Jersey" fetchpriority="high">
+      </div>
+      <button id="previous" class="hero-arrow prev" aria-label="Previous slide">‹</button>
+      <button id="next" class="hero-arrow next" aria-label="Next slide">›</button>
+      <div id="hero-dots" class="hero-dots" aria-label="Choose a slide"></div>
+      <button id="pause" class="hero-arrow pause" aria-label="Pause slideshow">Ⅱ</button>
+    </section>
+    <div class="store-info">
+      <span><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 5h12v12H2zM14 9h4l4 4v4h-8"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg>Dar es Salaam delivery</span>
+      <button type="button" data-price><small class="tzs-icon" aria-hidden="true">TZS</small>Kits from TZS 25,000</button>
+      <a id="chat" href="https://wa.me/255763760220" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a9 9 0 0 1-13 8L2 21l1.5-5A9 9 0 1 1 21 11.5Z"/></svg>Chat on WhatsApp</a>
+    </div>
+    <section id="latest" class="latest" aria-labelledby="latest-title">
+      <div class="catalogue-head latest-head">
+        <div><h2 id="latest-title">Latest Drops &amp; Hottest</h2><p>FC Barcelona</p></div>
+        <a href="./index.html?view=wardrobe" class="button">Visit the Barcelona wardrobe</a>
+      </div>
+      <div id="latest-grid" class="grid"></div>
+    </section>
+    <section id="catalogue" class="catalogue" aria-labelledby="catalogue-title">
+      <div class="catalogue-head">
+        <h2 id="catalogue-title">THE KIT ROOM<span>.</span></h2>
+        <div class="search-row">
+          <input id="search" type="search" placeholder="Search team or kit" aria-label="Search kits" autocomplete="off">
+          <button id="toggle-filters" aria-controls="filters" aria-expanded="false">Filters</button>
+        </div>
+      </div>
+      <div id="collections" class="collections" aria-label="Kit collections"></div>
+      <div id="filters" class="filters" hidden>
+        <label>Team <select id="team"></select></label>
+        <label>Kit type <select id="type"></select></label>
+        <label>Availability <select id="availability"></select></label>
+      </div>
+      <div class="result-row"><span id="results" role="status">Loading kits…</span><button id="clear" type="button" hidden>Clear filters</button></div>
+      <div id="grid" class="grid"></div>
+      <button id="more" class="button more" type="button" hidden>Show more kits <span aria-hidden="true">＋</span></button>
+    </section>
+  </main>
+  <main class="wrap wardrobe-page" id="wardrobe-view" hidden>
+    <a class="return-shop" href="./index.html#latest">Back to the shop</a>
+    <div class="wardrobe-intro">
+      <div><p class="wardrobe-kicker">JR KITS · WARDROBE</p>
+        <h1 id="wardrobe-title">The Barcelona Wardrobe</h1>
+        <p id="wardrobe-description">Drag jerseys along the rail to rearrange them. Select any jersey to see its front, back and custom printing options.</p>
+      </div>
+      <a class="button gold" href="./index.html?view=wardrobe&amp;rack=mine" id="my-wardrobe-link">Build my wardrobe</a>
+    </div>
+    <nav class="rack-tabs" aria-label="Wardrobes">
+      <a href="./index.html?view=wardrobe" id="barcelona-tab">Barcelona</a>
+      <a href="./index.html?view=wardrobe&amp;rack=mine" id="personal-tab">My wardrobe</a>
+    </nav>
+    <div id="wardrobe-tools" class="wardrobe-tools" hidden>
+      <label>Wardrobe name <input id="wardrobe-name" type="text" maxlength="60" placeholder="My wardrobe"></label>
+      <button type="button" class="button" id="pick-kits">Add jerseys</button>
+      <button type="button" class="button gold" id="add-wardrobe">Add wardrobe to bag</button>
+    </div>
+    <div class="rack-frame">
+      <div class="rack-top"><span id="rack-name">FC Barcelona</span><span id="rack-count"></span></div>
+      <div class="rack-scroll" id="rack-scroll" tabindex="0" aria-label="Scrollable jersey rail">
+        <ol id="rack" class="rack" aria-label="Jersey order"></ol>
+      </div>
+    </div>
+    <p id="rack-status" class="muted" role="status">Loading wardrobe…</p>
+  </main>
+  <dialog id="pick-dialog" aria-labelledby="pick-title">
+    <div class="dialog-head"><h2 id="pick-title">Add jerseys to your wardrobe</h2><form method="dialog"><button class="icon" aria-label="Close jersey picker">×</button></form></div>
+    <label>Find a jersey <input type="search" id="pick-search" placeholder="Search by team or jersey"></label>
+    <div id="pick-results" class="pick-results"></div>
+  </dialog>
+  <footer><div class="wrap footer">
+    <a class="brand" href="./index.html" aria-label="JR Kits home"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span><span><strong>JR KITS</strong><small>KIT PARADISE</small></span></a>
+    <span><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 10c0 5-7 12-7 12S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></svg>Dar es Salaam, Tanzania</span>
+    <button type="button" data-price>Price guide</button>
+  </div></footer>
+  <dialog id="price-dialog" aria-labelledby="price-title">
+    <div class="dialog-head"><h2 id="price-title">KIT PRICES</h2><form method="dialog"><button class="icon" aria-label="Close price guide">×</button></form></div>
+    <p class="price-sub">Price per kit, in Tanzanian shillings.</p>
+    <dl id="price-list" class="prices"></dl>
+    <details class="print-guide"><summary>Printing services</summary><dl class="prices" id="printing-prices"></dl></details>
+  </dialog>
+  <dialog id="detail-dialog" class="detail" aria-labelledby="detail-title">
+    <div class="dialog-head"><h2 id="detail-title"></h2><form method="dialog"><button class="icon" aria-label="Close kit details">×</button></form></div>
+    <div id="detail-body"></div>
+  </dialog>
+  <dialog id="bag-dialog" class="bag" aria-labelledby="bag-title">
+    <div class="bag-head"><div class="bag-brand"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3.5 6 3-4h11l3 4v14a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2zM4 6h16M8 10a4 4 0 0 0 8 0"/></svg> JR KITS / KIT PARADISE</div><h2 id="bag-title">Your order bag <span id="drawer-count">0</span></h2><p id="bag-summary"></p><form method="dialog"><button class="icon" aria-label="Close bag">×</button></form></div>
+    <div class="bag-scroll">
+      <div id="bag-items"></div>
+      <section id="delivery" hidden>
+        <div class="delivery-heading"><strong><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 10c0 5-7 12-7 12S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></svg>Delivery details</strong><span>Dar es Salaam</span></div>
+        <label>Your name (optional)<input id="customer" placeholder="Full name" autocomplete="name" maxlength="100"></label>
+        <label>Delivery area<input id="area" placeholder="e.g. Sinza, Mikocheni, Mbezi" autocomplete="address-level3" maxlength="120"></label>
+        <details class="order-preview"><summary>Order message</summary><textarea id="copy-field" readonly aria-label="Order message"></textarea><button class="button" id="copy" type="button">Copy order message</button></details>
+      </section>
+    </div>
+    <section class="bag-bottom">
+      <div class="total"><strong id="total-label">Order total</strong><strong id="total"></strong></div>
+      <div id="checkout" hidden>
+        <a class="button dark" id="whatsapp" target="_blank" rel="noopener"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a9 9 0 0 1-13 8L2 21l1.5-5A9 9 0 1 1 21 11.5Z"/></svg>Order on WhatsApp</a>
+        <form method="dialog"><button class="keep-shopping">Continue shopping</button></form>
+      </div>
+    </section>
+  </dialog>
+  <template id="empty-bag"><div class="empty-bag"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3.5 6 3-4h11l3 4v14a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2zM4 6h16M8 10a4 4 0 0 0 8 0"/></svg><h3>Your bag is empty</h3><form method="dialog"><button class="button">Continue shopping</button></form></div></template>
+  <div class="notice" id="notice" hidden><span aria-hidden="true" class="notice-check">✓</span><span id="notice-copy" role="status"></span><button id="view-bag" type="button" hidden>View bag</button></div>
+  <template id="card-template">
+    <article class="kit">
+      <button class="photo" type="button"><span class="fallback">Request a kit photo</span><span class="badge"></span></button>
+      <div class="kit-copy"><div class="meta"><span class="kit-type"></span><span class="stock"></span></div>
+      <h3><button class="kit-name" type="button"></button></h3><p class="variant"></p>
+      <div class="buy"><strong class="price"></strong><button class="icon choose" type="button">+</button></div></div>
+    </article>
+  </template>
+</body>
+</html>
